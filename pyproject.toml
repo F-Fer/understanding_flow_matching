@@ -1,0 +1,27 @@
+[project]
+name = "advanced-ml"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+
+dependencies = [
+    "torch>=2.3.0",             # MPS backend supported
+    "torchvision>=0.18.0",
+    "numpy",
+    "matplotlib",
+    "scikit-learn",             # for make_moons
+    "tqdm",                     # optional progress bars
+]
+
+[tool.uv]
+# optional: ensures a small, deterministic env
+dev-dependencies = [
+    "jupyterlab",               # run the notebook interactively
+    "ipykernel",
+    "notebook",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
