@@ -14,13 +14,18 @@ dependencies = [
     "tqdm",                     # optional progress bars
 ]
 
-[tool.uv]
-# optional: ensures a small, deterministic env
-dev-dependencies = [
+[dependency-groups]
+dev = [
     "jupyterlab",               # run the notebook interactively
     "ipykernel",
     "notebook",
 ]
+
+[tool.setuptools]
+py-modules = ["main"]
+
+[tool.setuptools.packages.find]
+exclude = ["notebooks*", "images*"]
 
 [build-system]
 requires = ["setuptools"]
