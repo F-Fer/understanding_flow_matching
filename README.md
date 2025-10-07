@@ -2,6 +2,8 @@
 
 ![@image.png](images/image.png)
 
+![@image.png](images/generation.png)
+
 This repository collects exploratory notebooks that implement modern generative-learning techniques on toy and canonical datasets. Current work includes:
 
 - Conditional rectified-flow experiments on 2D moons and Fashion-MNIST, featuring FiLM-conditioned MLPs and a small convolutional UNet.
